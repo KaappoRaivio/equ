@@ -6,13 +6,99 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <RelativeLayout
+        android:id="@+id/container"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_height="320dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <raivio.kaappo.equalizer.VerticalSeekBar
+            android:id="@+id/slider_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider_margin"
+            android:tag="0"
+
+            />
+
+        <raivio.kaappo.equalizer.VerticalSeekBar
+            android:id="@+id/slider_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider_margin"
+            android:layout_toEndOf="@id/slider_1"
+            android:tag="1"
+
+            />
+
+        <raivio.kaappo.equalizer.VerticalSeekBar
+            android:id="@+id/slider_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider_margin"
+            android:layout_toEndOf="@id/slider_2"
+            android:tag="2"
+
+            />
+
+        <raivio.kaappo.equalizer.VerticalSeekBar
+            android:id="@+id/slider_4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider_margin"
+            android:layout_toEndOf="@id/slider_3"
+            android:tag="3"
+
+            />
+
+        <raivio.kaappo.equalizer.VerticalSeekBar
+            android:id="@+id/slider_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider_margin"
+            android:layout_toEndOf="@id/slider_4"
+            android:tag="4"
+
+            />
+
+        <raivio.kaappo.equalizer.VerticalSeekBar
+            android:id="@+id/slider_6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider_margin"
+            android:layout_toEndOf="@id/slider_5"
+            android:tag="5"
+
+            />
+
+        <raivio.kaappo.equalizer.VerticalSeekBar
+            android:id="@+id/slider_7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider_margin"
+            android:layout_toEndOf="@id/slider_6"
+            android:tag="6"
+
+            />
+
+        <raivio.kaappo.equalizer.VerticalSeekBar
+            android:id="@+id/slider_8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/slider_margin"
+            android:layout_toEndOf="@id/slider_7"
+            android:tag="7"
+
+            />
+
+
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
